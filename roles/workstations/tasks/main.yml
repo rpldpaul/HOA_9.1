@@ -76,7 +76,7 @@
        WantedBy=multi-user.target
    when: ansible_distribution == "CentOS"
 
- - name: Reload systemd
+ - name: Reload systems
    command: systemctl daemon-reload
    when: ansible_distribution == "CentOS"
 
